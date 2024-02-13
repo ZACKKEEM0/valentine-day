@@ -1,6 +1,6 @@
 $(document).ready(function (e) {
     var COUNT = 0;
-    var FINAL_COUNT = 1;
+    var FINAL_COUNT = 20;
     $('#count-text').text(`0/${FINAL_COUNT}`);
     $('#leave_from_mouse').mousemove(function (e) {
         if (COUNT < FINAL_COUNT) {
