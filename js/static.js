@@ -19,14 +19,6 @@ $(document).ready(function (e) {
                 setTimeout(() => {
                     $('.card').hide();
                     $('#video-block').fadeIn(500);
-                    var video = document.getElementById("player");
-                    if (video.requestFullscreen) {
-                        video.requestFullscreen();
-                    } else if (video.mozRequestFullScreen) {
-                        video.mozRequestFullScreen();
-                    } else if (video.webkitRequestFullscreen) {
-                        video.webkitRequestFullscreen();
-                    }
                     $('video').trigger('play')
                 }, 5000);
             }, 1000);
