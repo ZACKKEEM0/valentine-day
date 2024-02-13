@@ -10,6 +10,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/jquery.simple-dtpicker.css" />
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
@@ -32,7 +33,61 @@
             <video class="player" id="player" width="400px" controls="1" src="assets/valentine.mp4"></video>
         </div>
     </div>
+
+    <div class="container-weeding">
+        <div class="card-form">
+            <header>
+                <h2>กรุณากรอก</h2>
+            </header>
+            <hr><br>
+            <div>
+                <label for="name">ชื่อ</label>
+                <input type="text" name="name" id="name">
+            </div><br>
+            <div>
+                <label for="lastname">นามสกุล</label>
+                <input type="text" name="lastname" id="lastname">
+            </div><br>
+            <img src="" width="200px" id="cat-img">
+            <p>เหมียวขอลายเซ็นหน่อยฮะ</p><br>
+            <hr><br>
+            <div class="signature">
+                <canvas id="signature-pad" class="signature-pad" height=200></canvas>
+            </div><br>
+            <div class="submit-form">
+                <button id="save">Save</button>
+                <button id="clear">Clear</button>
+            </div>
+        </div>
+
+        <div class="cer">
+            <h2 class="marriage">marriage card</h2>
+            <div>
+                <span id="marriagename">XXX</span>
+            </div>
+            <p>คบหากับ</p>
+            <div>
+                <span>ภาคิน คำโคตรสูนย์</span>
+            </div>
+            <hr>
+            <p>เป็นเวลา</p>
+            <div id="countdown">
+                <p><span class="up_y"></span> Y</p>|
+                <p><span class="up_d"></span> D</p>|
+                <p><span class="up_h"></span> H</p>|
+                <p><span class="up_m"></span> M</p>|
+                <p><span class="up_s"></span> S</p>
+            </div>
+            <input type="text" name="" id="yearinput" hidden>
+            <div>
+                <img id="signature_img" width="120" src="" alt="">
+            </div>
+        </div>
+    </div>
+
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/signature_pad@4.1.7/dist/signature_pad.umd.min.js"></script>
+    <script src="js/jquery.simple-dtpicker.js"></script>
     <script src="js/static.js"></script>
 </body>
 
